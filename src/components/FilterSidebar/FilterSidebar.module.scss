@@ -1,0 +1,44 @@
+.sidebar {
+    position: fixed;
+    height: 100%;
+    background-color: white;
+    z-index: 200;
+    width: 300px;
+    // flex: 0 1 300px;
+    box-shadow: 0px 0px 5px gray;
+    padding: 15px;
+
+    .title {
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+}
+
+.filterBlock label {
+    display: block;
+}
+
+.input {
+    width: 100%;
+    padding: 8px 0px;
+    border: 0;
+    border-bottom: 1px solid black;
+    font-size: 16px;
+
+    &:focus {
+        outline: none;
+        border-bottom: 1px solid rgb(78, 104, 255);
+        ;
+    }
+}
+
+.filterButton {
+    padding: 10px 20px;
+    width: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}

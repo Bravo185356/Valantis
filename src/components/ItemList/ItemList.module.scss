@@ -1,0 +1,24 @@
+.wrapper {
+    display: flex;
+    padding: 100px 30px 30px 330px;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1 1 auto;
+
+    &.noPagination {
+        padding: 30px 30px 30px 330px;
+    }
+}
+
+.list {
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.emptyListMessage {
+    font-size: 24px;
+    text-align: center;
+}

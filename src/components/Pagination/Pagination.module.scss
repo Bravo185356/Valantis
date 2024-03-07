@@ -1,0 +1,25 @@
+.pagination {
+    position: fixed;
+    width: calc(100% - 300px);
+    box-shadow: 0px 0px 5px gray;
+    background-color: white;
+    top: 0;
+    z-index: 10;
+    padding: 10px 0px;
+    min-height: 80px;
+    right: 0;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template: 1fr / repeat(2, 150px);
+    gap: 10px;
+
+    &>.paginationNext {
+        justify-self: end;
+        grid-column: 2 / 3;
+    }
+
+    .paginationButton {
+        padding: 15px 30px;
+    }
+}
